@@ -1,0 +1,9 @@
+#Rem This file is used to connect, view, use and copy remote files using cmd.
+#Rem Open command prompt in administrator mode.
+#Rem ping to ip with -a argument to view remote computer name
+#Rem use net use, net share, net view commands
+net view \\sdkapadi-mobl1 #rem this is to view remotely shared folders
+net use \\sdkapadi-mobl1\Users #rem this is to connect to a folder on remote machine
+net use #Rem this is to display which net sessions are running
+xcopy /E \\sdkapadi-mobl1\Users * #Rem this is to copy all folders from remote machine to current dir.
+dir \\sdkapadi-mobl1\Users #Rem this is to view remote files under Users folder.
